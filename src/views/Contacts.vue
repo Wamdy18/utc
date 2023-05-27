@@ -1,18 +1,18 @@
 <template>
   <div class="contacts-page">
-    <Header/>
+    <Navbar/>
     Contacts
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Header from '@/components/header.vue'
+import Navbar from '@/components/navbar.vue'
 
 export default {
   name: 'Contacts',
   components: {
-    Header,
+    Navbar,
   }
 }
 </script>

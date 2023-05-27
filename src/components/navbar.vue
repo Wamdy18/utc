@@ -1,5 +1,5 @@
 <template>
- <div class="header">
+ <div class="navbar-div">
     <div class="container">
         <ul v-if="desktopScreen">
             <li><router-link to="/" :class="{'active-link' : true}">Главная</router-link></li>
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    name: 'Header',
+    name: 'Navbar',
     data() {
         return {
             desktopScreen: window.innerWidth > 800,
@@ -45,26 +45,26 @@ export default {
 </script>
 
 <style scoped>
-.header {
+.navbar-div {
     background-color: #303444;
     color: rgba(255, 255, 255, 0.5);
     padding-block: 25px;
 }
-.header .container {
+.navbar-div .container {
     display: flex;
     justify-content: end;
 }
-.header ul{
+.navbar-div ul{
     display: flex;
     justify-content: end;
     gap: 40px;
 }
-.header ul li a {
+.navbar-div ul li a {
     text-transform: uppercase;
     font-weight: 400;
     transition: 0.2s ease all;
 }
-.header ul li a:hover {
+.navbar-div ul li a:hover {
     color: rgba(255, 255, 255, 1);
 }
 .router-link-active {
