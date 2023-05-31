@@ -2,7 +2,7 @@
   <div class="catalog-page">
     <Navbar/>
     <Header/>
-    Catalog
+    <Catalog/>
   </div>
 </template>
 
@@ -10,12 +10,14 @@
 // @ is an alias to /src
 import Navbar from '@/components/navbar.vue'
 import Header from '@/components/header.vue'
+import Catalog from '@/components/catalog.vue'
 
 export default {
-  name: 'Catalog',
+  name: 'CatalogPage',
   components: {
     Navbar,
-    Header
+    Header,
+    Catalog
   }
 }
 </script>

@@ -1,7 +1,9 @@
 <template>
-  <button class="main-btn">
-    <slot></slot>
-  </button>
+  <router-link to="/catalog">
+    <button class="main-btn">
+      <slot></slot>
+    </button>
+  </router-link>
 </template>
 
 <script>

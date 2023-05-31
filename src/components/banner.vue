@@ -11,7 +11,7 @@
                     <li><span class="triangle"></span>Приятные цены</li>
                 </ul>
                 <div class="div-btn">
-                    <MainButton class="m-btn"><router-link to="/catalog">Перейти в каталог</router-link></MainButton>
+                    <MainButton class="m-btn">Перейти в каталог</MainButton>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
                     <li><span class="triangle"></span>Приятные цены</li>
                 </ul>
                 <div class="div-btn">
-                    <MainButton class="m-btn"><router-link to="/catalog">Перейти в каталог</router-link></MainButton>
+                    <MainButton class="m-btn">Перейти в каталог</MainButton>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
                     <li><span class="triangle"></span>Приятные цены</li>
                 </ul>
                 <div class="div-btn">
-                    <MainButton class="m-btn"><router-link to="/catalog">Перейти в каталог</router-link></MainButton>
+                    <MainButton class="m-btn">Перейти в каталог</MainButton>
                 </div>
             </div>
         </div>
@@ -77,7 +77,6 @@ export default {
             if (this.bannerIndex < 2) {
                 this.bannerIndex += 1
                 activeSliderItem = sliderItems[this.bannerIndex];
-                console.log(activeSliderItem);
             } else {
                 this.bannerIndex = 0;
                 activeSliderItem = sliderItems[0];
