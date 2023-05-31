@@ -1,8 +1,9 @@
 <template>
   <div class="catalog-page">
     <Navbar/>
-    <Header/>
+    <!-- <Header/> -->
     <Catalog/>
+    <Footer/>
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Navbar from '@/components/navbar.vue'
 import Header from '@/components/header.vue'
 import Catalog from '@/components/catalog.vue'
+import Footer from '@/components/footer.vue'
 
 export default {
   name: 'CatalogPage',
   components: {
     Navbar,
     Header,
-    Catalog
+    Catalog,
+    Footer
   }
 }
 </script>

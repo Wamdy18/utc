@@ -1,7 +1,7 @@
 <template>
   <div class="category-page">
     <Navbar/>
-    <Header/>
+    <!-- <Header/> -->
     <div class="catalog">
       <div class="container">
         <h2>Каталог товаров > {{ category != null && category.catName != null ? category.catName : "" }}</h2>
@@ -16,8 +16,8 @@
         </div>
       </div>
       
-      
-  </div>
+    </div>
+    <Footer/>
   </div>
 </template>
 
@@ -25,6 +25,7 @@
 // @ is an alias to /src
 import Navbar from '@/components/navbar.vue'
 import Header from '@/components/header.vue'
+import Footer from '@/components/footer.vue'
 import catalog from '@/data/catalog.json';
 import ProductCard from "@/components/productCard.vue";
 
@@ -33,7 +34,8 @@ export default {
   components: {
     Navbar,
     Header,
-    ProductCard
+    ProductCard,
+    Footer
   },
   data() {
     return {
@@ -52,6 +54,7 @@ export default {
 <style scoped>    
 .catalog {
   padding-block: 50px;
+  min-height: calc(100vh - 250px);
 }
 .catalog h2 {
   font-size: 16px;
