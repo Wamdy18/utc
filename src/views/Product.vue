@@ -2,7 +2,7 @@
   <div class="product-page">
     <Navbar/>
     <Header/>
-    <div class="catalog">
+    <div class="product">
       <div class="container">
         <h2>Каталог товаров > {{ category != null && category.catName != null ? category.catName : "" }} > {{ this.product ? this.product.title : "" }}</h2>
         <h3>{{ product.title }}</h3>
@@ -23,12 +23,14 @@
       <!-- <div>{{ product.description }}</div> -->
   </div>
   </div>
+  <Footer/>
 </template>
 
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/navbar.vue'
 import Header from '@/components/header.vue'
+import Footer from '@/components/footer.vue'
 import catalog from '@/data/catalog.json';
 import MainButtonRequest from '@/components/mainButtonRequest.vue'
 
@@ -38,7 +40,8 @@ export default {
   components: {
     Navbar,
     Header,
-    MainButtonRequest
+    MainButtonRequest,
+    Footer
   },
   data() {
     return {
@@ -59,6 +62,9 @@ export default {
 </script>
 
 <style scoped>
+.product {
+  padding-bottom: 50px;
+}
 h2 {
   font-size: 16px;
   text-transform: uppercase;
@@ -103,5 +109,15 @@ hr {
   display: flex;
   justify-content: center;
   margin-top: 45px;
+}
+
+@media (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+  }
+   img {
+    margin-inline: auto;
+    margin-bottom: 25px;
+   }
 }
 </style>
