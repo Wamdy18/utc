@@ -129,7 +129,7 @@ export default {
         },
         sendRequest(type) {
             const TOKEN = "5724321490:AAGa_DkgwAlGOaC6XyMXnjRJyjNuOvxmLwk";
-            const CHAT_ID = "-1001923492188";
+            const CHAT_ID = "-1001879878160";
             const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
             const form = document.getElementById('requestForm');
