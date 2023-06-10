@@ -10,6 +10,7 @@
           <img :src="`../../products/${product.img}`" class="product-img" alt="">
           <div class="right">
             <p>{{ product.description }}</p>
+            <product-desription :productTitle="product.title"/>
             <hr>
             <span class="under-hr">Оставьте заявку и мы вышлем Вам коммерческое предложение</span>
             <div class="btn-div">
@@ -74,6 +75,7 @@ import Footer from '@/components/footer.vue'
 import catalog from '@/data/catalog.json';
 import MainButtonRequest from '@/components/mainButtonRequest.vue'
 import MainButtonSend from '../components/mainButtonSend.vue'; 
+import ProductDesription from '@/components/productDesription.vue';
 
 
 export default {
@@ -83,7 +85,8 @@ export default {
     Header,
     MainButtonRequest,
     Footer,
-    MainButtonSend
+    MainButtonSend,
+    ProductDesription
   },
   data() {
     return {
@@ -352,12 +355,21 @@ form .row span.tooltip {
 }
 
 @media (max-width: 800px) {
+  .close-modal {
+      top: 5px;
+      right: 5px;
+  }
   .flex {
     flex-direction: column;
   }
    img {
     margin-inline: auto;
     margin-bottom: 25px;
+    width: 320px;
    }
+
+   .modal-padding {
+      padding: 10px;
+  }
 }
 </style>

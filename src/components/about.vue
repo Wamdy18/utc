@@ -14,7 +14,7 @@
                 <div class="fact">
                     <div class="fact-icon fact-icon-2"></div>
                     <div class="fact-info">
-                        <span class="fact-info-top">15 офисов</span>
+                        <span class="fact-info-top">Работаем</span>
                         <span class="fact-info-bottom">По всей России и странам СНГ</span>
                     </div>
                 </div>

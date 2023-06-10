@@ -14,8 +14,8 @@
           </div>
           <div class="about-item">
             <div class="about-icon about-icon-2"></div>
-            <div class="about-h">15 офисов</div>
-            <div class="about-text">Именно столько мы имеем, если учитывать территорию всей России и стран СНГ. Прямо сейчас строится еще один.</div>
+            <div class="about-h">Работаем</div>
+            <div class="about-text">На территории всей России и стран СНГ.</div>
           </div>
           <div class="about-item">
             <div class="about-icon about-icon-3"></div>

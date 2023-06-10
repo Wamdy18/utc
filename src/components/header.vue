@@ -445,6 +445,10 @@ form .row span.tooltip {
 }
 
 @media (max-width: 800px) {
+    .close-modal {
+        top: 5px;
+        right: 5px;
+    }
     .header {
         flex-direction: column;
         margin-block: 15px;
@@ -458,6 +462,10 @@ form .row span.tooltip {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+    }
+
+    .modal-padding {
+        padding: 10px;
     }
     
 }
