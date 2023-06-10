@@ -49,6 +49,10 @@
             </div>
         </div>
     </div>
+    <div class="product-1-5" v-if="productTitle == 'Крепление для настила'">
+        <br>
+        <img :src="'../../products/product-1-5_1.png'" alt="">
+    </div>
     <div class="product-2-1" v-if="productTitle == 'Грязезащитная придверная решетка'">
         <br>
         <img :src="'../../products/product-2-2_1.png'" alt="">
