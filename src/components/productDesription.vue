@@ -1,13 +1,36 @@
 <template>
   <div class="product-additional-description">
     <div class="product-1-1" v-if="productTitle == 'Сварной настил'">
-        <br>
+        <!-- <br>
         <img :src="'../../products/product-1-1_1.png'" alt="" class="p-1-1_1_img">
         <br>
         <img :src="'../../products/product-1-1_2.png'" alt="" class="p-1-1_1_img">
         <p>
         Компания «УРАЛТЕХСТРОЙ» производит сварной решетчатый настил с соблюдением требований ТУ 5262-001-81167288-2009, отвечают европейским стандартам DIN 24537-1.
-        </p>
+        </p> -->
+        <h5>Производство</h5>
+        <p>Производство изделий осуществляется на автоматизированной линии методом контактной сварки, благодаря чему настил становится единой монолитной конструкцией. Именно эта особенность является одним из главных преимуществ сварных решеток перед прессованными, поскольку позволяет совершать дополнительные вырезы и другие операции на месте монтажа с помощью специализированного инструмента без потери прочностных характеристик и целостности изделия. Благодаря указанным характеристикам сварной решетчатый настил является стандартом в промышленном строительстве, обеспечивающим примерно 85% общего объема поставок ячеистых решеток в качестве покрытий площадок обслуживаний, мостиков, переходов, эстакад на рынке промышленного строительства.</p>
+        <br>
+        <p>Сварной решетчатый настил «УралТехСтрой» изготавливается методом сварки из стальных полос и связующих, крученных прутков по СТО 25.11.23-001-02727746-2022 (ТУ 25.11.23-001-02727746-2020 (взамен ТУ 5262-001-02727746-2016 (взамен ТУ 5262-001-93757807-2008) и соответствует стандартам ГОСТ 23120-2016 и DIN 24537.</p>
+        <img :src="'../../products/product-1-1_3.png'" alt="" class="p-1-1_1_img">
+        <h5>Типы сварных настилов</h5>
+        <div class="d-flex flex-wrap">
+            <img :src="'../../products/product-1-1_4.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-1_5.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-1_6.png'" alt="" class="smallImg">
+        </div>
+        <div class="d-flex flex-wrap">
+            <img :src="'../../products/product-1-1_7.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-1_8.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-1_9.png'" alt="" class="smallImg">
+        </div>
+        <div class="d-flex flex-wrap">
+            <img :src="'../../products/product-1-1_10.png'" alt="" class="smallImg">
+        </div>
+        <h5>Параметры</h5>
+        <img :src="'../../products/product-1-1_2.png'" alt="" class="p-1-1_1_img">
+        <h5>Размер ячеек</h5>
+        <p>Размер ячеек: 34,3х101,6 (или 34х101) мм и 43,2х101,6 (или 43х101) мм.</p>
     </div>
     <div class="product-1-2" v-if="productTitle == 'Прессованный настил'">
         <img :src="'../../products/product-1-2_1.png'" alt="" class="p-1-1_1_img">
@@ -253,6 +276,19 @@ export default {
 </script>
 
 <style scoped> 
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #303444;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+p {
+    font-size: 14px;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .w-500 {
     font-weight: 500;
 }
@@ -270,6 +306,11 @@ export default {
 }
 .product-additional-description .d-flex .p-1-3_card{
     width: 32%;
+}
+
+.product-additional-description img.smallImg {
+    width: 200px;
+    height: 200px;
 }
 
 @media (max-width: 800px) {

@@ -9,7 +9,7 @@
         <div class="flex mt-30">
           <img :src="`../../products/${product.img}`" class="product-img" alt="">
           <div class="right">
-            <p>{{ product.description }}</p>
+            <p> <b class="boldText">{{ product.boldText ? product.boldText : "" }}</b>{{ product.contentText ? product.contentText : product.description }}</p>
             <product-desription :productTitle="product.title"/>
             <hr>
             <span class="under-hr">Оставьте заявку и мы вышлем Вам коммерческое предложение</span>
@@ -196,6 +196,10 @@ h3 {
   color: #303543;
   text-align: center;
 }
+.boldText {
+  color: #303444;
+  font-weight: 600;
+}
 .flex {
   display: flex;
 }
@@ -276,6 +280,9 @@ h4 {
     color: #303543;
     text-align: center;
     margin-bottom: 20px;
+}
+p {
+    font-size: 14px;
 }
 
 form .row span {
