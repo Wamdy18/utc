@@ -8,17 +8,17 @@
         <img :src="'../../products/product-1-1_3.png'" alt="" class="p-1-1_1_img">
         <h5>Типы сварных настилов</h5>
         <div class="d-flex flex-wrap">
+            <img :src="'../../products/product-1-1_8.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-1_9.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-1_10.png'" alt="" class="smallImg">
+        </div>
+        <div class="d-flex flex-wrap">
             <img :src="'../../products/product-1-1_4.png'" alt="" class="smallImg">
             <img :src="'../../products/product-1-1_5.png'" alt="" class="smallImg">
             <img :src="'../../products/product-1-1_6.png'" alt="" class="smallImg">
         </div>
         <div class="d-flex flex-wrap">
             <img :src="'../../products/product-1-1_7.png'" alt="" class="smallImg">
-            <img :src="'../../products/product-1-1_8.png'" alt="" class="smallImg">
-            <img :src="'../../products/product-1-1_9.png'" alt="" class="smallImg">
-        </div>
-        <div class="d-flex flex-wrap">
-            <img :src="'../../products/product-1-1_10.png'" alt="" class="smallImg">
         </div>
         <h5>Параметры</h5>
         <br>
@@ -45,7 +45,29 @@
         <img :src="'../../products/product-1-1_11.jpeg'" alt="" class="p-1-1_1_img">
     </div>
     <div class="product-1-2" v-if="productTitle == 'Прессованный настил'">
-        <img :src="'../../products/product-1-2_1.png'" alt="" class="p-1-1_1_img">
+
+        <h5>Производство</h5>
+        <p>Производство ячеистых решеток осуществляется на специальном оборудовании под давлением в 100 тонн. Холодная запрессовка обеспечивает равномерную и точную структуру ячеек и позволяет достичь эстетичного внешнего вида изделий. Для защиты продукции от коррозии и повышения её эстетической привлекательности применяются современные методы обработки и окраски. Рекомендуем на последней стадии производства изделия покрывать горячим цинком, за счет которого повышается стойкость к коррозии.</p>
+        <br>
+        <p>Прессованный решетчатый настил «УралТехСтрой» производится методом холодной прессовки, без использования сварки по СТО 25.11.23-001-02727746-2022 (ТУ 25.11.23-001-02727746-2020 (взамен ТУ 5262-001-02727746-2016 (взамен ТУ 5262-001-93757807-2008) и соответствует стандартам ГОСТ 23120-2016 и DIN 24537.</p>
+        <img :src="'../../products/product-1-2_2.png'" alt="" class="p-1-1_1_img">
+        <h5>Типы сварных настилов</h5>
+        <div class="d-flex flex-wrap">
+            <img :src="'../../products/product-1-2_3.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-2_4.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-2_5.png'" alt="" class="smallImg">
+        </div>
+        <div class="d-flex flex-wrap">
+            <img :src="'../../products/product-1-1_4.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-1_5.png'" alt="" class="smallImg">
+            <img :src="'../../products/product-1-1_6.png'" alt="" class="smallImg">
+        </div>
+        <div class="d-flex flex-wrap">
+            <img :src="'../../products/product-1-1_7.png'" alt="" class="smallImg">
+        </div>
+        <h5>Параметры</h5>
+        <br>
+        <img :src="'../../products/product-1-2_1.png'" alt="" class="w-400 center">
         <p style="font-weight: 500;">Основные элементы прессованного настила</p>
         <br>
         <p>В – ширина настила (длина связующих полос)</p>
@@ -57,6 +79,28 @@
         <p>b1 – шаг между связующими полосами</p>
         <p>k – выступ связующего прутка</p>
         <p>g – выступ несущей полосы</p>
+        <h5>Размер ячеек</h5>
+        <table>
+            <tr>
+                <td>Несущая полоса, мм</td>
+                <td colspan="5" style="text-align: center;">33</td>
+                <td colspan="2" style="text-align: center;">44</td>
+                <td colspan="2" style="text-align: center;">66</td>
+            </tr>
+            <tr>
+                <td>Связующий пруток, мм</td>
+                <td>11</td>
+                <td>33</td>
+                <td>44</td>
+                <td>66</td>
+                <td>99</td>
+                <td>11</td>
+                <td>44</td>
+                <td>66</td>
+                <td>99</td>
+            </tr>
+        </table>
+        <img :src="'../../products/product-1-2_6.png'" alt="" class="p-1-1_1_img">
     </div>
     <div class="product-1-3" v-if="productTitle == 'Стеклопластиковый настил'">
         <br>
@@ -323,6 +367,10 @@ table td{
 }
 .w-500 {
     font-weight: 500;
+}
+img.w-400.center {
+    width: 400px;
+    margin-inline: auto;
 }
 .size16 {
     font-size: 16px;
