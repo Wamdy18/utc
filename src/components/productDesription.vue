@@ -497,5 +497,8 @@ img.w-400.center {
         width: 100%;
         margin-block: 15px;
     }
+    .p1-5_card {
+        max-width: 100%;
+    }
 }
 </style>
